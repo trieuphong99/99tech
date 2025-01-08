@@ -1,0 +1,24 @@
+{
+  "name": "my-express-api",
+  "version": "1.0.0",
+  "description": "Express TypeScript CRUD API with SQLite",
+  "main": "dist/app.js",
+  "scripts": {
+    "start": "ts-node src/app.ts",
+    "dev": "nodemon src/app.ts",
+    "build": "tsc",
+    "migrate": "ts-node src/database/migrate.ts"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "reflect-metadata": "^0.2.2",
+    "sqlite3": "^5.1.7",
+    "typeorm": "^0.3.20"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}
